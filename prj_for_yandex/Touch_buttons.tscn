@@ -1,0 +1,40 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://arrays/upA_pressed.png" type="Texture" id=1]
+[ext_resource path="res://arrays/upA.png" type="Texture" id=2]
+[ext_resource path="res://arrays/downA_pressed.png" type="Texture" id=3]
+[ext_resource path="res://arrays/leftA.png" type="Texture" id=4]
+[ext_resource path="res://arrays/downA.png" type="Texture" id=5]
+[ext_resource path="res://arrays/rightA.png" type="Texture" id=6]
+[ext_resource path="res://arrays/leftA_pressed.png" type="Texture" id=7]
+[ext_resource path="res://arrays/rightA_pressed.png" type="Texture" id=8]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="up" type="TouchScreenButton" parent="."]
+position = Vector2( 235, 698 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 2 )
+pressed = ExtResource( 1 )
+action = "ui_up"
+
+[node name="down" type="TouchScreenButton" parent="."]
+position = Vector2( 235, 874 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 5 )
+pressed = ExtResource( 3 )
+action = "ui_down"
+
+[node name="left" type="TouchScreenButton" parent="."]
+position = Vector2( 79, 874 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 4 )
+pressed = ExtResource( 7 )
+action = "ui_left"
+
+[node name="right" type="TouchScreenButton" parent="."]
+position = Vector2( 395, 874 )
+scale = Vector2( 3, 3 )
+normal = ExtResource( 6 )
+pressed = ExtResource( 8 )
+action = "ui_right"

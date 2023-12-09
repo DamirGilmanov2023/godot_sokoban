@@ -1,0 +1,445 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://ofont.ru_Woodstick.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://boxgr.tscn" type="PackedScene" id=2]
+[ext_resource path="res://wallbr.tscn" type="PackedScene" id=3]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Ground_Concrete.png" type="Texture" id=5]
+[ext_resource path="res://spot.tscn" type="PackedScene" id=6]
+[ext_resource path="res://GroundGravel_Sand.png" type="Texture" id=7]
+[ext_resource path="res://GroundGravel_Dirt.png" type="Texture" id=8]
+[ext_resource path="res://SokobanClone_byVellidragon.png" type="Texture" id=9]
+[ext_resource path="res://arrow_return_icon_175872 (1).png" type="Texture" id=10]
+[ext_resource path="res://Home_icon-icons.com_55890.png" type="Texture" id=11]
+[ext_resource path="res://ground_04.png" type="Texture" id=12]
+[ext_resource path="res://level21.gd" type="Script" id=13]
+[ext_resource path="res://Touch_buttons.tscn" type="PackedScene" id=14]
+
+[sub_resource type="DynamicFont" id=1]
+size = 15
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 15
+font_data = ExtResource( 1 )
+
+[sub_resource type="TileSet" id=3]
+0/name = "ground_04.png 0"
+0/texture = ExtResource( 12 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "SokobanClone_byVellidragon.png 1"
+1/texture = ExtResource( 9 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 192, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "SokobanClone_byVellidragon.png 2"
+2/texture = ExtResource( 9 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 165, 66, 2, 1 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "SokobanClone_byVellidragon.png 3"
+3/texture = ExtResource( 9 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 160, 384, 32, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Ground_Concrete.png 4"
+4/texture = ExtResource( 5 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "GroundGravel_Sand.png 5"
+5/texture = ExtResource( 7 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "GroundGravel_Dirt.png 6"
+6/texture = ExtResource( 8 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+
+[node name="level21" type="Node2D"]
+script = ExtResource( 13 )
+
+[node name="player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 64, 16 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -240, -128 )
+anchor_mode = 0
+current = true
+zoom = Vector2( 0.25, 0.24 )
+
+[node name="walls" type="Node2D" parent="."]
+position = Vector2( -16, 48 )
+
+[node name="wallbr" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -24, -88 )
+
+[node name="wallbr2" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -40, -88 )
+
+[node name="wallbr3" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -56, -88 )
+
+[node name="wallbr4" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -72, -72 )
+
+[node name="wallbr5" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -72, -56 )
+
+[node name="wallbr17" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -40, -40 )
+
+[node name="wallbr6" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -72, -40 )
+
+[node name="wallbr7" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -72, -24 )
+
+[node name="wallbr8" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -72, -8 )
+
+[node name="wallbr9" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -72, -88 )
+
+[node name="wallbr10" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -8, -88 )
+
+[node name="wallbr11" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 8, -88 )
+
+[node name="wallbr12" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 8, -72 )
+
+[node name="wallbr13" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 24, -72 )
+
+[node name="wallbr14" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 40, -72 )
+
+[node name="wallbr15" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 40, -56 )
+
+[node name="wallbr29" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 40, -40 )
+
+[node name="wallbr30" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 56, -40 )
+
+[node name="wallbr31" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 72, -40 )
+
+[node name="wallbr32" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 72, -56 )
+
+[node name="wallbr33" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 72, -72 )
+
+[node name="wallbr34" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 72, -88 )
+
+[node name="wallbr35" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 88, -88 )
+
+[node name="wallbr36" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 104, -88 )
+
+[node name="wallbr37" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, -88 )
+
+[node name="wallbr49" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 120, -88 )
+
+[node name="wallbr38" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, -72 )
+
+[node name="wallbr39" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, -56 )
+
+[node name="wallbr40" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, -40 )
+
+[node name="wallbr41" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, -24 )
+
+[node name="wallbr42" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, -8 )
+
+[node name="wallbr43" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, 8 )
+
+[node name="wallbr44" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, 24 )
+
+[node name="wallbr50" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 136, 40 )
+
+[node name="wallbr45" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 120, 40 )
+
+[node name="wallbr46" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 104, 40 )
+
+[node name="wallbr47" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 88, 40 )
+
+[node name="wallbr48" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 72, 40 )
+
+[node name="wallbr51" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 72, 24 )
+
+[node name="wallbr52" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 72, 8 )
+
+[node name="wallbr53" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 72, -8 )
+
+[node name="wallbr16" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -56, -8 )
+
+[node name="wallbr18" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -40, -8 )
+
+[node name="wallbr19" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -40, 8 )
+
+[node name="wallbr20" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -40, 24 )
+
+[node name="wallbr21" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -24, 24 )
+
+[node name="wallbr22" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -24, 40 )
+
+[node name="wallbr23" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( -8, 40 )
+
+[node name="wallbr24" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 8, 40 )
+
+[node name="wallbr25" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 24, 40 )
+
+[node name="wallbr28" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 24, 8 )
+
+[node name="wallbr26" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 40, 40 )
+
+[node name="wallbr27" parent="walls" instance=ExtResource( 3 )]
+position = Vector2( 56, 40 )
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+margin_left = -32.0
+margin_top = -48.0
+margin_right = 96.0
+margin_bottom = 26.0
+window_title = "!!!"
+resizable = true
+dialog_text = "Уровень пройден!"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="spots" type="Node2D" parent="."]
+
+[node name="spot2" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 208, 80 )
+
+[node name="spot4" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 208, 96 )
+
+[node name="spot5" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 208, 112 )
+
+[node name="spot6" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 208, 128 )
+
+[node name="spot11" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 192, 128 )
+
+[node name="spot12" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 176, 128 )
+
+[node name="spot10" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 208, 144 )
+
+[node name="spot3" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 176, 64 )
+
+[node name="spot7" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 192, 64 )
+
+[node name="spot8" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 208, 48 )
+
+[node name="spot9" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 208, 64 )
+
+[node name="boxes" type="Node2D" parent="."]
+
+[node name="boxgr" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( 16, 48 )
+
+[node name="boxgr10" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( 32, 32 )
+
+[node name="boxgr11" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( 48, 16 )
+
+[node name="boxgr2" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( -48, 16 )
+
+[node name="boxgr4" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( -32, 16 )
+
+[node name="boxgr5" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( -16, 16 )
+
+[node name="boxgr8" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( -16, 32 )
+
+[node name="boxgr9" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( -16, 48 )
+
+[node name="boxgr6" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( -16, -16 )
+
+[node name="boxgr7" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( -16, 0 )
+
+[node name="boxgr3" parent="boxes" instance=ExtResource( 2 )]
+position = Vector2( -48, -16 )
+
+[node name="level" type="Label" parent="."]
+margin_left = -160.0
+margin_top = -128.0
+margin_right = -44.0
+margin_bottom = -104.0
+custom_fonts/font = SubResource( 1 )
+text = "Уровень 21"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="move" type="Label" parent="."]
+margin_left = -48.0
+margin_top = -128.0
+margin_right = 22.0
+margin_bottom = -108.0
+custom_fonts/font = SubResource( 2 )
+text = "Шаги: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_home" type="Button" parent="."]
+margin_left = -240.0
+margin_top = -128.0
+margin_right = -208.0
+margin_bottom = -96.0
+icon = ExtResource( 11 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_reset" type="Button" parent="."]
+margin_left = -208.0
+margin_top = -128.0
+margin_right = -176.0
+margin_bottom = -96.0
+icon = ExtResource( 10 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TileMap" type="TileMap" parent="."]
+show_behind_parent = true
+tile_set = SubResource( 3 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -196610, 2, 0, -65533, 2, 0, 3, 2, 0, 65539, 2, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+show_behind_parent = true
+tile_set = SubResource( 3 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -3, 4, 0, -2, 4, 0, -1, 4, 0, -65534, 4, 0, -65533, 2, 0, 65534, 4, 0, 65535, 4, 0, 0, 4, 0, 1, 4, 0, 2, 4, 0, 131069, 2, 0, 131070, 2, 0, 131071, 4, 0, 65536, 4, 0, 65538, 4, 0 )
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 14 )]
+
+[connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
+[connection signal="pressed" from="btn_reset" to="." method="_on_btn_reset_pressed"]

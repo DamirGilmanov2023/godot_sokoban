@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Crate_Gray.png" type="Texture" id=1]
+[ext_resource path="res://Crate_Brown.png" type="Texture" id=2]
+[ext_resource path="res://box.gd" type="Script" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "na_meste1",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1.42978, 1.54977 )
+
+[node name="box" type="KinematicBody2D" groups=[
+"box",
+]]
+script = ExtResource( 3 )
+
+[node name="box" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 1 )
+speed_scale = 3.0
+playing = true
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 7.96941, 7.99441 )
+shape = SubResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 8, 8 )
+cast_to = Vector2( 0, 16 )
+[connection signal="tree_entered" from="box" to="." method="_on_box_tree_entered"]

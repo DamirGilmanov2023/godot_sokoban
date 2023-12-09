@@ -1,0 +1,538 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://ofont.ru_Woodstick.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://kirp.jpg" type="Texture" id=2]
+[ext_resource path="res://Touch_buttons.tscn" type="PackedScene" id=3]
+[ext_resource path="res://TileMap2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://spot.tscn" type="PackedScene" id=6]
+[ext_resource path="res://cave.tscn" type="PackedScene" id=7]
+[ext_resource path="res://cavebr.tscn" type="PackedScene" id=8]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Purple.png" type="Texture" id=10]
+[ext_resource path="res://Ground_Concrete.png" type="Texture" id=11]
+[ext_resource path="res://arrow_return_icon_175872 (1).png" type="Texture" id=12]
+[ext_resource path="res://Home_icon-icons.com_55890.png" type="Texture" id=13]
+[ext_resource path="res://ground_04.png" type="Texture" id=14]
+[ext_resource path="res://GroundGravel_Dirt.png" type="Texture" id=15]
+[ext_resource path="res://SokobanClone_byVellidragon.png" type="Texture" id=16]
+[ext_resource path="res://GroundGravel_Sand.png" type="Texture" id=17]
+[ext_resource path="res://lvl/level52.gd" type="Script" id=18]
+
+[sub_resource type="TileSet" id=1]
+0/name = "ground_04.png 0"
+0/texture = ExtResource( 14 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "SokobanClone_byVellidragon.png 1"
+1/texture = ExtResource( 16 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 192, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "SokobanClone_byVellidragon.png 2"
+2/texture = ExtResource( 16 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 165, 66, 2, 1 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "SokobanClone_byVellidragon.png 3"
+3/texture = ExtResource( 16 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 160, 384, 32, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Ground_Concrete.png 4"
+4/texture = ExtResource( 11 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "GroundGravel_Dirt.png 5"
+5/texture = ExtResource( 15 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "GroundGravel_Sand.png 6"
+6/texture = ExtResource( 17 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Purple.png 7"
+7/texture = ExtResource( 10 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 32, 0, 32, 32 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 12
+font_data = ExtResource( 1 )
+
+[node name="level52" type="Node2D"]
+script = ExtResource( 18 )
+
+[node name="TileMap2" parent="." instance=ExtResource( 5 )]
+tile_set = SubResource( 1 )
+tile_data = PoolIntArray( -327686, 1073741830, 0, -327684, 1073741830, 0, -327683, 1073741830, 0, -327679, 1073741830, 0, -262144, 1073741830, 0, -131081, 1073741830, 0, -131078, 1073741830, 0, -131075, 1073741830, 0, -196608, 1073741830, 0, -6, 1073741830, 0, -65536, 1073741830, 0, 65533, 1073741830, 0, 65535, 1073741830, 0, 131066, 1073741830, 0, 131067, 1073741830, 0, 131068, 1073741830, 0, 131069, 1073741830, 0 )
+
+[node name="player" parent="." instance=ExtResource( 9 )]
+position = Vector2( -120, -16 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -240, -128 )
+anchor_mode = 0
+current = true
+zoom = Vector2( 0.25, 0.24 )
+
+[node name="walls" type="Node2D" parent="."]
+position = Vector2( -16, 48 )
+
+[node name="cavebr" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 72, -80 )
+
+[node name="cavebr5" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 72, -64 )
+
+[node name="cavebr6" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 72, -48 )
+
+[node name="cavebr7" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 72, -32 )
+
+[node name="cavebr8" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 72, -16 )
+
+[node name="cavebr9" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 56, -16 )
+
+[node name="cavebr11" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 56, 0 )
+
+[node name="cavebr29" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 56, 16 )
+
+[node name="cavebr31" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 40, 16 )
+
+[node name="cavebr32" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 24, 16 )
+
+[node name="cavebr33" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 8, 16 )
+
+[node name="cavebr34" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -8, 16 )
+
+[node name="cavebr35" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -24, 16 )
+
+[node name="cavebr36" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -40, 16 )
+
+[node name="cavebr37" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -56, 16 )
+
+[node name="cavebr38" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -72, 16 )
+
+[node name="cavebr39" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, 16 )
+
+[node name="cavebr40" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, 0 )
+
+[node name="cavebr41" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, -16 )
+
+[node name="cavebr42" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, -32 )
+
+[node name="cavebr49" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -104, -32 )
+
+[node name="cavebr50" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -120, -32 )
+
+[node name="cavebr51" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -136, -32 )
+
+[node name="cavebr43" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -72, -32 )
+
+[node name="cavebr44" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -56, -32 )
+
+[node name="cavebr45" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -40, -32 )
+
+[node name="cavebr46" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -24, -32 )
+
+[node name="cavebr47" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -8, -32 )
+
+[node name="cavebr48" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 8, -32 )
+
+[node name="cavebr2" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 40, -80 )
+
+[node name="cavebr3" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 24, -80 )
+
+[node name="cavebr4" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 8, -80 )
+
+[node name="cavebr52" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -24, -80 )
+
+[node name="cavebr53" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -40, -80 )
+
+[node name="cavebr54" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -72, -64 )
+
+[node name="cavebr55" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, -64 )
+
+[node name="cavebr56" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, -80 )
+
+[node name="cavebr10" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 88, -80 )
+
+[node name="cavebr12" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 88, -96 )
+
+[node name="cavebr13" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 88, -112 )
+
+[node name="cavebr14" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 8, -160 )
+
+[node name="cavebr16" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 8, -144 )
+
+[node name="cavebr28" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 24, -112 )
+
+[node name="cavebr22" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 24, -144 )
+
+[node name="cavebr23" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 40, -144 )
+
+[node name="cavebr24" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 56, -144 )
+
+[node name="cavebr25" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 72, -144 )
+
+[node name="cavebr26" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 88, -144 )
+
+[node name="cavebr27" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( 88, -128 )
+
+[node name="cavebr17" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -24, -160 )
+
+[node name="cavebr30" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -24, -128 )
+
+[node name="cavebr18" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -40, -160 )
+
+[node name="cavebr19" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -56, -160 )
+
+[node name="cavebr20" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -72, -160 )
+
+[node name="cavebr21" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, -160 )
+
+[node name="cavebr57" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, -144 )
+
+[node name="cavebr58" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, -128 )
+
+[node name="cavebr59" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -88, -112 )
+
+[node name="cavebr60" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -104, -112 )
+
+[node name="cavebr61" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -120, -112 )
+
+[node name="cavebr62" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -136, -112 )
+
+[node name="cavebr63" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -136, -96 )
+
+[node name="cavebr64" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -136, -80 )
+
+[node name="cavebr65" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -136, -64 )
+
+[node name="cavebr66" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -136, -48 )
+
+[node name="cavebr15" parent="walls" instance=ExtResource( 8 )]
+position = Vector2( -8, -160 )
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+margin_left = -32.0
+margin_top = -48.0
+margin_right = 96.0
+margin_bottom = 26.0
+window_title = "!!!"
+resizable = true
+dialog_text = "Уровень пройден!"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="spots" type="Node2D" parent="."]
+
+[node name="spot3" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 136, 112 )
+
+[node name="spot5" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 104, 112 )
+
+[node name="spot6" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 88, 112 )
+
+[node name="spot7" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 120, 128 )
+
+[node name="spot8" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 56, 112 )
+
+[node name="spot9" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 40, 112 )
+
+[node name="spot11" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 72, 128 )
+
+[node name="spot12" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 56, 128 )
+
+[node name="spot13" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 88, 128 )
+
+[node name="spot15" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 120, 112 )
+
+[node name="spot16" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 136, 128 )
+
+[node name="spot14" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 104, 128 )
+
+[node name="spot10" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 40, 128 )
+
+[node name="spot17" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 24, 128 )
+
+[node name="spot18" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 24, 112 )
+
+[node name="spot4" parent="spots" instance=ExtResource( 6 )]
+position = Vector2( 72, 112 )
+
+[node name="boxes" type="Node2D" parent="."]
+
+[node name="cave" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -24, -48 )
+
+[node name="cave13" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( 8, -16 )
+
+[node name="cave7" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( 24, 0 )
+
+[node name="cave9" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -56, -48 )
+
+[node name="cave10" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( 8, 16 )
+
+[node name="cave11" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -8, 0 )
+
+[node name="cave12" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -72, -48 )
+
+[node name="cave8" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( 24, 16 )
+
+[node name="cave6" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -88, -64 )
+
+[node name="cave15" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -120, -32 )
+
+[node name="cave16" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -72, -16 )
+
+[node name="cave17" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -56, 0 )
+
+[node name="cave18" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -40, -16 )
+
+[node name="cave2" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( 24, -64 )
+
+[node name="cave3" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( 40, -64 )
+
+[node name="cave14" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( 40, -48 )
+
+[node name="cave4" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -56, -80 )
+
+[node name="cave5" parent="boxes" instance=ExtResource( 7 )]
+position = Vector2( -40, -64 )
+
+[node name="level" type="Label" parent="."]
+margin_left = 152.0
+margin_top = -128.0
+margin_right = 268.0
+margin_bottom = -104.0
+custom_fonts/font = SubResource( 2 )
+text = "Уровень 52"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="move" type="Label" parent="."]
+margin_left = 152.0
+margin_top = -112.0
+margin_right = 222.0
+margin_bottom = -92.0
+custom_fonts/font = SubResource( 3 )
+text = "Шаги: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_home" type="Button" parent="."]
+margin_left = -240.0
+margin_top = -128.0
+margin_right = -208.0
+margin_bottom = -96.0
+icon = ExtResource( 13 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_reset" type="Button" parent="."]
+margin_left = -208.0
+margin_top = -128.0
+margin_right = -176.0
+margin_bottom = -96.0
+icon = ExtResource( 12 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -240, -128 )
+scale = Vector2( 0.25, 0.213333 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="CanvasLayer" parent="." instance=ExtResource( 3 )]
+
+[connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
+[connection signal="pressed" from="btn_reset" to="." method="_on_btn_reset_pressed"]
