@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://ofont.ru_Woodstick.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://level16.gd" type="Script" id=2]
@@ -11,7 +11,6 @@
 [ext_resource path="res://Purple.png" type="Texture" id=9]
 [ext_resource path="res://Home_icon-icons.com_55890.png" type="Texture" id=10]
 [ext_resource path="res://bg1.jpg" type="Texture" id=11]
-[ext_resource path="res://Touch_buttons.tscn" type="PackedScene" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 15
@@ -325,8 +324,6 @@ cell_size = Vector2( 32, 32 )
 cell_quadrant_size = 32
 format = 1
 tile_data = PoolIntArray( -65537, 1, 0, -131071, 1, 0, 65535, 1, 0, 1, 1, 0, 2, 1, 0 )
-
-[node name="CanvasLayer" parent="." instance=ExtResource( 12 )]
 
 [connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
 [connection signal="pressed" from="btn_reset" to="." method="_on_btn_reset_pressed"]

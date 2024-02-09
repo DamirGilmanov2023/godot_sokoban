@@ -1,7 +1,6 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://ofont.ru_Woodstick.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Touch_buttons.tscn" type="PackedScene" id=2]
 [ext_resource path="res://cave.tscn" type="PackedScene" id=3]
 [ext_resource path="res://spot.tscn" type="PackedScene" id=5]
 [ext_resource path="res://cavebr.tscn" type="PackedScene" id=7]
@@ -917,8 +916,6 @@ margin_bottom = -96.0
 icon = ExtResource( 12 )
 clip_text = true
 expand_icon = true
-
-[node name="CanvasLayer" parent="." instance=ExtResource( 2 )]
 
 [connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
 [connection signal="pressed" from="btn_reset" to="." method="_on_btn_reset_pressed"]

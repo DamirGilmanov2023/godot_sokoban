@@ -6,14 +6,12 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 6.88716, 6.9724 )
 
-[node name="kub" type="KinematicBody2D" groups=[
-"box",
-]]
+[node name="kub" type="KinematicBody2D" groups=["box"]]
 script = ExtResource( 2 )
 
 [node name="kub" type="Sprite" parent="."]
 position = Vector2( 0, 4.76837e-07 )
-scale = Vector2( 0.00260163, 0.00266445 )
+scale = Vector2( 0.15, 0.154639 )
 texture = ExtResource( 1 )
 centered = false
 

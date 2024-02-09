@@ -95,9 +95,6 @@ __meta__ = {
 margin_top = 88.0
 margin_right = 1920.0
 margin_bottom = 1080.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="1" type="Button" parent="levels"]
 margin_left = 8.0
@@ -107,9 +104,6 @@ margin_bottom = 112.0
 text = "1"
 icon = ExtResource( 2 )
 expand_icon = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="2" type="Button" parent="levels"]
 margin_left = 136.0

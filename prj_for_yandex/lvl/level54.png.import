@@ -15,7 +15,7 @@ dest_files=[ "res://.import/level54.png-31926bdb209a6baf59957636931fe938.stex" ]
 [params]
 
 compress/mode=1
-compress/lossy_quality=0.7
+compress/lossy_quality=0.2
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0

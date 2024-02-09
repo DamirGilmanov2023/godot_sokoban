@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://ofont.ru_Woodstick.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://wallbr.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://boxgr.tscn" type="PackedScene" id=4]
 [ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=5]
 [ext_resource path="res://level22.gd" type="Script" id=6]
-[ext_resource path="res://Touch_buttons.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Home_icon-icons.com_55890.png" type="Texture" id=10]
 [ext_resource path="res://SokobanClone_byVellidragon.png" type="Texture" id=11]
 [ext_resource path="res://arrow_return_icon_175872 (1).png" type="Texture" id=12]
@@ -458,8 +457,6 @@ tile_set = SubResource( 3 )
 cell_size = Vector2( 32, 32 )
 format = 1
 tile_data = PoolIntArray( -196607, 4, 0, -196606, 4, 0, -196605, 4, 0, -65539, 4, 0, -65538, 4, 0, -65537, 4, 0, -131072, 4, 0, -131069, 4, 0, -1, 4, 0, -65536, 4, 0, 65534, 4, 0, 65535, 4, 0, 131069, 4, 0, 131070, 4, 0, 131071, 4, 0 )
-
-[node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
 
 [connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
 [connection signal="pressed" from="btn_reset" to="." method="_on_btn_reset_pressed"]

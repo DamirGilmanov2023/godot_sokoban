@@ -15,7 +15,7 @@ dest_files=[ "res://.import/lvl31.png-01989803cdbbbf99fcf5aa7dbd4b13d2.stex" ]
 [params]
 
 compress/mode=1
-compress/lossy_quality=0.7
+compress/lossy_quality=0.2
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0

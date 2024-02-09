@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://ofont.ru_Woodstick.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://spot.tscn" type="PackedScene" id=4]
 [ext_resource path="res://ice.tscn" type="PackedScene" id=5]
 [ext_resource path="res://kub.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Touch_buttons.tscn" type="PackedScene" id=7]
 [ext_resource path="res://ground_04.png" type="Texture" id=10]
 [ext_resource path="res://arrow_return_icon_175872 (1).png" type="Texture" id=11]
 [ext_resource path="res://Home_icon-icons.com_55890.png" type="Texture" id=12]
@@ -519,8 +518,6 @@ position = Vector2( -240, -128 )
 scale = Vector2( 0.48, 0.352 )
 texture = ExtResource( 19 )
 centered = false
-
-[node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
 
 [connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
 [connection signal="pressed" from="btn_reset" to="." method="_on_btn_reset_pressed"]

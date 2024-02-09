@@ -27,5 +27,4 @@ func _on_change_pressed():
 	var _err = get_tree().change_scene("res://lvl_select.tscn")
 
 
-func _on_exit_pressed():
-	get_tree().quit()
+
