@@ -31,3 +31,17 @@ func _foc_unfoc(args):
 	
 #---------------------------------
 
+signal get_data(value)
+var callback_get_data=JavaScript.create_callback(self,'_get_data')
+
+func js_get_data():
+	win.get_data(callback_get_data)
+
+func _get_data(args):
+	print(args[0])
+	emit_signal("get_data",args[0])
+
+#---------------------------------
+
+func js_set_data(value):
+	win.set_data(value)

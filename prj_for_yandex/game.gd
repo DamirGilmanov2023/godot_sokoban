@@ -2,6 +2,10 @@ extends Node2D
 var game_end = false
 var moves = 0
 var new_texture = "res://Crate_Gray..png"
+
+func _ready():
+	Global.js_set_data("game")
+
 func _process(delta):
 	$move.text = 'Шаги: ' + str(moves)
 	if game_end == false:

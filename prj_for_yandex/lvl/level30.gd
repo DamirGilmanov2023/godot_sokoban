@@ -2,6 +2,9 @@ extends Node2D
 var game_end = false
 var moves = 0
 
+func _ready():
+	Global.js_set_data("lvl/level30")
+
 func _process(delta):
 	$move.text = 'Шаги: ' + str(moves)
 	if game_end == false:

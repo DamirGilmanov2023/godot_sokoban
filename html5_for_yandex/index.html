@@ -242,6 +242,25 @@ ysdk.feedback.canReview()
                 console.log(reason)
             }
         })
+		
+function get_data(callback){
+var player;
+ysdk.getPlayer().then(_player=>_player.getData()).then(res=>{callback(res['PlayerData']); console.log(res['PlayerData'])});
+}
+
+function set_data(value){
+var player;
+var v=String(value);
+ysdk.getPlayer().then(_player => {
+        player = _player;
+        player.setData(
+        {'PlayerData':v}
+    ).then(() => {
+        console.log('data is set')})
+  		console.log(v);
+    });
+}
+
 </script>
 </head>
 <body>
@@ -267,7 +286,7 @@ ysdk.feedback.canReview()
 	<script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":22680016,"index.wasm":17862218},"focusCanvas":true,"gdnativeLibs":[]};
+		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":22716080,"index.wasm":17865444},"focusCanvas":true,"gdnativeLibs":[]};
 		var engine = new Engine(GODOT_CONFIG);
 
 		(function() {
