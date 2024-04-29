@@ -1,0 +1,568 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://ofont.ru_Woodstick.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://ice.tscn" type="PackedScene" id=2]
+[ext_resource path="res://spot.tscn" type="PackedScene" id=3]
+[ext_resource path="res://kub.tscn" type="PackedScene" id=4]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://level41.gd" type="Script" id=7]
+[ext_resource path="res://Home_icon-icons.com_55890.png" type="Texture" id=10]
+[ext_resource path="res://arrow_return_icon_175872 (1).png" type="Texture" id=11]
+[ext_resource path="res://TileMap2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://ground_04.png" type="Texture" id=13]
+[ext_resource path="res://GroundGravel_Sand.png" type="Texture" id=14]
+[ext_resource path="res://Ground_Concrete.png" type="Texture" id=15]
+[ext_resource path="res://GroundGravel_Dirt.png" type="Texture" id=16]
+[ext_resource path="res://SokobanClone_byVellidragon.png" type="Texture" id=17]
+[ext_resource path="res://Purple.png" type="Texture" id=18]
+[ext_resource path="res://icebg1.jpg" type="Texture" id=19]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 1 )
+
+[sub_resource type="TileSet" id=3]
+0/name = "ground_04.png 0"
+0/texture = ExtResource( 13 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+1/name = "SokobanClone_byVellidragon.png 1"
+1/texture = ExtResource( 17 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 192, 0, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 0
+2/name = "SokobanClone_byVellidragon.png 2"
+2/texture = ExtResource( 17 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 165, 66, 2, 1 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+3/name = "SokobanClone_byVellidragon.png 3"
+3/texture = ExtResource( 17 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 160, 384, 32, 32 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape_one_way = false
+3/shape_one_way_margin = 0.0
+3/shapes = [  ]
+3/z_index = 0
+4/name = "Ground_Concrete.png 4"
+4/texture = ExtResource( 15 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 0
+5/name = "GroundGravel_Dirt.png 5"
+5/texture = ExtResource( 16 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "GroundGravel_Sand.png 6"
+6/texture = ExtResource( 14 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 0
+7/name = "Purple.png 7"
+7/texture = ExtResource( 18 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 32, 0, 32, 32 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 0
+
+[node name="level41" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="player" parent="." instance=ExtResource( 5 )]
+position = Vector2( -88, 16 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -240, -128 )
+anchor_mode = 0
+current = true
+zoom = Vector2( 0.25, 0.24 )
+
+[node name="walls" type="Node2D" parent="."]
+position = Vector2( -16, 48 )
+
+[node name="StaticBody2D" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, -128 )
+
+[node name="StaticBody2D14" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, -144 )
+
+[node name="StaticBody2D15" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -104, -144 )
+
+[node name="StaticBody2D16" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -88, -144 )
+
+[node name="StaticBody2D3" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, -16 )
+
+[node name="StaticBody2D31" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, 0 )
+
+[node name="StaticBody2D32" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, 16 )
+
+[node name="StaticBody2D33" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, 32 )
+
+[node name="StaticBody2D34" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, 48 )
+
+[node name="StaticBody2D35" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -104, 48 )
+
+[node name="StaticBody2D36" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -88, 48 )
+
+[node name="StaticBody2D37" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -72, 48 )
+
+[node name="StaticBody2D38" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -56, 48 )
+
+[node name="StaticBody2D39" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -40, 48 )
+
+[node name="StaticBody2D40" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -24, 48 )
+
+[node name="StaticBody2D41" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -24, 32 )
+
+[node name="StaticBody2D42" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -8, 32 )
+
+[node name="StaticBody2D43" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -8, 16 )
+
+[node name="StaticBody2D49" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 8, 32 )
+
+[node name="StaticBody2D50" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 24, 32 )
+
+[node name="StaticBody2D51" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 40, 32 )
+
+[node name="StaticBody2D13" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -88, -160 )
+
+[node name="StaticBody2D17" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -72, -160 )
+
+[node name="StaticBody2D18" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -56, -160 )
+
+[node name="StaticBody2D22" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -56, -128 )
+
+[node name="StaticBody2D19" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -40, -160 )
+
+[node name="StaticBody2D20" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -24, -160 )
+
+[node name="StaticBody2D4" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, -32 )
+
+[node name="StaticBody2D5" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -104, -32 )
+
+[node name="StaticBody2D7" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -104, -48 )
+
+[node name="StaticBody2D8" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -104, -64 )
+
+[node name="StaticBody2D9" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -104, -80 )
+
+[node name="StaticBody2D23" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -72, -64 )
+
+[node name="StaticBody2D24" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -56, -32 )
+
+[node name="StaticBody2D26" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -88, -32 )
+
+[node name="StaticBody2D27" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -72, -16 )
+
+[node name="StaticBody2D25" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -40, -32 )
+
+[node name="StaticBody2D28" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -24, -16 )
+
+[node name="StaticBody2D10" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, -80 )
+
+[node name="StaticBody2D11" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, -96 )
+
+[node name="StaticBody2D12" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -120, -112 )
+
+[node name="StaticBody2D21" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -88, -112 )
+
+[node name="StaticBody2D2" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -24, -144 )
+
+[node name="StaticBody2D6" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -8, -48 )
+
+[node name="StaticBody2D29" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 8, -32 )
+
+[node name="StaticBody2D30" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 24, -32 )
+
+[node name="StaticBody2D52" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 56, -32 )
+
+[node name="StaticBody2D53" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 88, -32 )
+
+[node name="StaticBody2D74" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 88, -16 )
+
+[node name="StaticBody2D75" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 88, 0 )
+
+[node name="StaticBody2D76" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 72, 0 )
+
+[node name="StaticBody2D77" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 56, 0 )
+
+[node name="StaticBody2D78" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 56, 16 )
+
+[node name="StaticBody2D79" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 56, 32 )
+
+[node name="StaticBody2D54" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 104, -32 )
+
+[node name="StaticBody2D55" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 120, -32 )
+
+[node name="StaticBody2D56" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 120, -48 )
+
+[node name="StaticBody2D57" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 136, -48 )
+
+[node name="StaticBody2D59" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 136, -64 )
+
+[node name="StaticBody2D60" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 136, -80 )
+
+[node name="StaticBody2D61" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 136, -96 )
+
+[node name="StaticBody2D62" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 136, -112 )
+
+[node name="StaticBody2D63" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 120, -112 )
+
+[node name="StaticBody2D64" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 104, -112 )
+
+[node name="StaticBody2D65" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 88, -112 )
+
+[node name="StaticBody2D66" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 72, -112 )
+
+[node name="StaticBody2D67" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 56, -112 )
+
+[node name="StaticBody2D72" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 56, -96 )
+
+[node name="StaticBody2D73" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 56, -64 )
+
+[node name="StaticBody2D68" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 40, -112 )
+
+[node name="StaticBody2D69" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 24, -112 )
+
+[node name="StaticBody2D70" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 8, -112 )
+
+[node name="StaticBody2D58" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 104, -80 )
+
+[node name="StaticBody2D44" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -8, -144 )
+
+[node name="StaticBody2D45" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -8, -128 )
+
+[node name="StaticBody2D46" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -8, -112 )
+
+[node name="StaticBody2D47" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -8, -96 )
+
+[node name="StaticBody2D71" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( 8, -96 )
+
+[node name="StaticBody2D48" parent="walls" instance=ExtResource( 2 )]
+position = Vector2( -8, -80 )
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+margin_left = -32.0
+margin_top = -48.0
+margin_right = 96.0
+margin_bottom = 26.0
+window_title = "!!!"
+resizable = true
+dialog_text = "Уровень пройден!"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="spots" type="Node2D" parent="."]
+
+[node name="spot3" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 72, 96 )
+
+[node name="spot6" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 72, 80 )
+
+[node name="spot7" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 88, 96 )
+
+[node name="spot8" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 104, 80 )
+
+[node name="spot10" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 120, 80 )
+
+[node name="spot11" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 136, 80 )
+
+[node name="spot14" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 136, 96 )
+
+[node name="spot12" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 152, 80 )
+
+[node name="spot13" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 168, 80 )
+
+[node name="spot15" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 168, 96 )
+
+[node name="spot9" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 88, 112 )
+
+[node name="spot16" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 104, 112 )
+
+[node name="spot17" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 120, 112 )
+
+[node name="spot18" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 136, 112 )
+
+[node name="spot19" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 152, 112 )
+
+[node name="spot20" parent="spots" instance=ExtResource( 3 )]
+position = Vector2( 168, 112 )
+
+[node name="boxes" type="Node2D" parent="."]
+
+[node name="kub2" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -104, -48 )
+
+[node name="kub12" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -88, -48 )
+
+[node name="kub13" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -72, -64 )
+
+[node name="kub14" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -72, -16 )
+
+[node name="kub17" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -72, 0 )
+
+[node name="kub15" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -56, -32 )
+
+[node name="kub18" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -24, -16 )
+
+[node name="kub20" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( 72, 0 )
+
+[node name="kub21" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( 88, -16 )
+
+[node name="kub22" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( 40, -32 )
+
+[node name="kub23" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( 24, -32 )
+
+[node name="kub25" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( 8, -16 )
+
+[node name="kub26" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( 24, 48 )
+
+[node name="kub24" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( 56, -32 )
+
+[node name="kub19" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -40, -16 )
+
+[node name="kub16" parent="boxes" instance=ExtResource( 4 )]
+position = Vector2( -56, -64 )
+
+[node name="level" type="Label" parent="."]
+margin_left = 152.0
+margin_top = -128.0
+margin_right = 268.0
+margin_bottom = -104.0
+custom_fonts/font = SubResource( 1 )
+text = "Уровень 41"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="move" type="Label" parent="."]
+margin_left = 152.0
+margin_top = -112.0
+margin_right = 222.0
+margin_bottom = -92.0
+custom_fonts/font = SubResource( 2 )
+text = "Шаги: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_home" type="Button" parent="."]
+margin_left = -240.0
+margin_top = -128.0
+margin_right = -208.0
+margin_bottom = -96.0
+icon = ExtResource( 10 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_reset" type="Button" parent="."]
+margin_left = -208.0
+margin_top = -128.0
+margin_right = -176.0
+margin_bottom = -96.0
+icon = ExtResource( 11 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TileMap2" parent="." instance=ExtResource( 12 )]
+tile_set = SubResource( 3 )
+tile_data = PoolIntArray( -1245206, 7, 0, -1245198, 7, 0, -1245190, 7, 0, -720902, 7, 0, -327687, 7, 0, -327686, 7, 0, -327685, 7, 0, -327684, 7, 0, -327683, 7, 0, -262152, 7, 0, -262151, 7, 0, -262150, 7, 0, -262149, 7, 0, -262148, 7, 0, -262147, 7, 0, -196616, 7, 0, -196611, 7, 0, -196610, 7, 0, -196609, 7, 0, -131080, 7, 0, -131079, 7, 0, -131077, 7, 0, -131076, 7, 0, -131075, 7, 0, -131074, 7, 0, -131073, 7, 0, -196608, 7, 0, -196607, 7, 0, -196606, 7, 0, -196605, 7, 0, -196604, 7, 0, -196603, 7, 0, -196602, 7, 0, -65543, 7, 0, -65542, 7, 0, -65541, 7, 0, -65540, 7, 0, -65538, 7, 0, -65537, 7, 0, -131072, 7, 0, -131071, 7, 0, -131070, 7, 0, -131069, 7, 0, -131068, 7, 0, -131067, 7, 0, -131066, 7, 0, -7, 7, 0, -6, 7, 0, -5, 7, 0, -4, 7, 0, -2, 7, 0, -1, 7, 0, -65536, 7, 0, -65535, 7, 0, -65534, 7, 0, -65533, 7, 0, -65532, 7, 0, -65531, 7, 0, 65530, 7, 0, 65531, 7, 0, 65532, 7, 0, 65533, 7, 0, 65534, 7, 0, 65535, 7, 0, 0, 7, 0, 1, 7, 0, 2, 7, 0, 3, 7, 0, 131067, 7, 0, 131068, 7, 0, 131069, 7, 0, 131070, 7, 0, 65537, 7, 0, 65538, 7, 0, 65539, 7, 0, 196600, 7, 0, 196601, 7, 0, 196602, 7, 0, 196603, 7, 0, 196604, 7, 0, 196605, 7, 0, 196606, 7, 0, 196607, 7, 0, 131072, 7, 0, 131073, 7, 0, 131074, 7, 0, 262136, 7, 0, 262137, 7, 0, 262139, 7, 0, 262140, 7, 0, 262141, 7, 0, 262142, 7, 0, 262143, 7, 0, 327672, 7, 0, 327673, 7, 0, 327674, 7, 0, 327675, 7, 0, 327676, 7, 0, 327678, 7, 0, 327679, 7, 0, 262144, 7, 0, 262145, 7, 0, 393208, 7, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -240, -128 )
+scale = Vector2( 0.48, 0.352 )
+texture = ExtResource( 19 )
+centered = false
+
+[connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
+[connection signal="pressed" from="btn_reset" to="." method="_on_btn_reset_pressed"]

@@ -1,0 +1,420 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://TileMap2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://icebg1.jpg" type="Texture" id=2]
+[ext_resource path="res://arrow_return_icon_175872 (1).png" type="Texture" id=6]
+[ext_resource path="res://Home_icon-icons.com_55890.png" type="Texture" id=7]
+[ext_resource path="res://ofont.ru_Woodstick.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=9]
+[ext_resource path="res://spot.tscn" type="PackedScene" id=10]
+[ext_resource path="res://ice.tscn" type="PackedScene" id=12]
+[ext_resource path="res://kub.tscn" type="PackedScene" id=13]
+[ext_resource path="res://lvl/level34.gd" type="Script" id=16]
+
+[sub_resource type="DynamicFont" id=1]
+size = 12
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 12
+font_data = ExtResource( 8 )
+
+[node name="level34" type="Node2D"]
+script = ExtResource( 16 )
+
+[node name="player" parent="." instance=ExtResource( 9 )]
+position = Vector2( 24, -48 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -240, -128 )
+anchor_mode = 0
+current = true
+zoom = Vector2( 0.25, 0.24 )
+
+[node name="walls" type="Node2D" parent="."]
+position = Vector2( -16, 48 )
+
+[node name="StaticBody2D" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -88, -96 )
+
+[node name="StaticBody2D2" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, -144 )
+
+[node name="StaticBody2D6" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, -112 )
+
+[node name="StaticBody2D44" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 40, -112 )
+
+[node name="StaticBody2D45" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 56, -112 )
+
+[node name="StaticBody2D46" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 72, -112 )
+
+[node name="StaticBody2D47" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 72, -96 )
+
+[node name="StaticBody2D48" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 88, -96 )
+
+[node name="StaticBody2D49" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 104, -96 )
+
+[node name="StaticBody2D50" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 120, -96 )
+
+[node name="StaticBody2D51" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 136, -96 )
+
+[node name="StaticBody2D52" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 152, -96 )
+
+[node name="StaticBody2D53" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 104, -80 )
+
+[node name="StaticBody2D69" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 88, -48 )
+
+[node name="StaticBody2D70" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 88, -32 )
+
+[node name="StaticBody2D8" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, -96 )
+
+[node name="StaticBody2D41" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, -80 )
+
+[node name="StaticBody2D42" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 40, -80 )
+
+[node name="StaticBody2D43" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 40, -64 )
+
+[node name="StaticBody2D54" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, 0 )
+
+[node name="StaticBody2D55" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, -32 )
+
+[node name="StaticBody2D57" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 40, -32 )
+
+[node name="StaticBody2D56" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, -16 )
+
+[node name="StaticBody2D7" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, -128 )
+
+[node name="StaticBody2D9" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -88, -144 )
+
+[node name="StaticBody2D10" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -72, -144 )
+
+[node name="StaticBody2D11" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -56, -144 )
+
+[node name="StaticBody2D12" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -40, -144 )
+
+[node name="StaticBody2D13" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -24, -144 )
+
+[node name="StaticBody2D71" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -24, -128 )
+
+[node name="StaticBody2D14" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -8, -144 )
+
+[node name="StaticBody2D15" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 8, -144 )
+
+[node name="StaticBody2D3" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -72, -96 )
+
+[node name="StaticBody2D4" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -72, -32 )
+
+[node name="StaticBody2D18" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -72, -48 )
+
+[node name="StaticBody2D19" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -72, -64 )
+
+[node name="StaticBody2D20" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -72, -80 )
+
+[node name="StaticBody2D16" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -88, -128 )
+
+[node name="StaticBody2D17" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -88, -112 )
+
+[node name="StaticBody2D5" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -72, -16 )
+
+[node name="StaticBody2D21" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -24, 0 )
+
+[node name="StaticBody2D25" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -8, 0 )
+
+[node name="StaticBody2D22" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -40, 0 )
+
+[node name="StaticBody2D23" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -40, -16 )
+
+[node name="StaticBody2D24" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -56, -16 )
+
+[node name="StaticBody2D26" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -24, 32 )
+
+[node name="StaticBody2D28" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -24, 48 )
+
+[node name="StaticBody2D29" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 72, 32 )
+
+[node name="StaticBody2D36" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 88, 32 )
+
+[node name="StaticBody2D37" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 88, 16 )
+
+[node name="StaticBody2D38" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 88, 0 )
+
+[node name="StaticBody2D40" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 120, 16 )
+
+[node name="StaticBody2D60" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 152, 16 )
+
+[node name="StaticBody2D61" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -24, -96 )
+
+[node name="StaticBody2D72" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -40, -64 )
+
+[node name="StaticBody2D62" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 152, 0 )
+
+[node name="StaticBody2D63" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 152, -48 )
+
+[node name="StaticBody2D66" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 152, -64 )
+
+[node name="StaticBody2D67" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 152, -80 )
+
+[node name="StaticBody2D68" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -40, -96 )
+
+[node name="StaticBody2D64" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 152, -32 )
+
+[node name="StaticBody2D65" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 152, -16 )
+
+[node name="StaticBody2D59" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 136, 16 )
+
+[node name="StaticBody2D39" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 104, 16 )
+
+[node name="StaticBody2D30" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 72, 48 )
+
+[node name="StaticBody2D31" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 56, 48 )
+
+[node name="StaticBody2D32" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 40, 48 )
+
+[node name="StaticBody2D58" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -8, -48 )
+
+[node name="StaticBody2D33" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 24, 48 )
+
+[node name="StaticBody2D34" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( 8, 48 )
+
+[node name="StaticBody2D35" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -8, 48 )
+
+[node name="StaticBody2D27" parent="walls" instance=ExtResource( 12 )]
+position = Vector2( -24, 16 )
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+margin_left = -32.0
+margin_top = -48.0
+margin_right = 96.0
+margin_bottom = 26.0
+window_title = "!!!"
+resizable = true
+dialog_text = "Уровень пройден!"
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="spots" type="Node2D" parent="."]
+
+[node name="spot3" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 200, 64 )
+
+[node name="spot6" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 200, 80 )
+
+[node name="spot7" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 200, 96 )
+
+[node name="spot8" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 200, 128 )
+
+[node name="spot9" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 200, 112 )
+
+[node name="spot4" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 232, 64 )
+
+[node name="spot11" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 232, 80 )
+
+[node name="spot12" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 232, 96 )
+
+[node name="spot13" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 232, 112 )
+
+[node name="spot14" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 232, 128 )
+
+[node name="spot15" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 216, 128 )
+
+[node name="spot16" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 216, 112 )
+
+[node name="spot17" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 216, 96 )
+
+[node name="spot5" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 216, 64 )
+
+[node name="spot10" parent="spots" instance=ExtResource( 10 )]
+position = Vector2( 216, 80 )
+
+[node name="boxes" type="Node2D" parent="."]
+
+[node name="kub2" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( -24, 32 )
+
+[node name="kub12" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( 8, 64 )
+
+[node name="kub13" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( 24, 64 )
+
+[node name="kub14" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( 56, 48 )
+
+[node name="kub15" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( 56, 32 )
+
+[node name="kub16" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( 56, 16 )
+
+[node name="kub8" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( -56, 0 )
+
+[node name="kub9" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( -40, -32 )
+
+[node name="kub10" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( -72, -64 )
+
+[node name="kub11" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( -24, -48 )
+
+[node name="kub7" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( -8, -32 )
+
+[node name="kub5" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( -8, -16 )
+
+[node name="kub6" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( -8, 0 )
+
+[node name="kub3" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( 40, -32 )
+
+[node name="kub4" parent="boxes" instance=ExtResource( 13 )]
+position = Vector2( 56, -16 )
+
+[node name="level" type="Label" parent="."]
+margin_left = 152.0
+margin_top = -128.0
+margin_right = 268.0
+margin_bottom = -104.0
+custom_fonts/font = SubResource( 1 )
+text = "Уровень 34"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="move" type="Label" parent="."]
+margin_left = 152.0
+margin_top = -112.0
+margin_right = 222.0
+margin_bottom = -92.0
+custom_fonts/font = SubResource( 2 )
+text = "Шаги: 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_home" type="Button" parent="."]
+margin_left = -240.0
+margin_top = -128.0
+margin_right = -208.0
+margin_bottom = -96.0
+icon = ExtResource( 7 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_reset" type="Button" parent="."]
+margin_left = -208.0
+margin_top = -128.0
+margin_right = -176.0
+margin_bottom = -96.0
+icon = ExtResource( 6 )
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TileMap2" parent="." instance=ExtResource( 1 )]
+tile_data = PoolIntArray( -1245206, 7, 0, -1245198, 7, 0, -1245190, 7, 0, -720902, 7, 0, -262150, 7, 0, -262148, 7, 0, -262146, 7, 0, -262145, 7, 0, -196609, 7, 0, -131077, 7, 0, -131076, 7, 0, -131075, 7, 0, -131074, 7, 0, -131073, 7, 0, -196607, 7, 0, -196606, 7, 0, -65541, 7, 0, -65540, 7, 0, -65538, 7, 0, -65537, 7, 0, -131072, 7, 0, -131071, 7, 0, -131070, 7, 0, -131069, 7, 0, -131068, 7, 0, -131067, 7, 0, -131066, 7, 0, -131065, 7, 0, -5, 7, 0, -4, 7, 0, -2, 7, 0, -1, 7, 0, -65536, 7, 0, -65535, 7, 0, -65534, 7, 0, -65531, 7, 0, -65530, 7, 0, -65529, 7, 0, 65531, 7, 0, 65532, 7, 0, 65533, 7, 0, 65534, 7, 0, 65535, 7, 0, 2, 7, 0, 3, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 131069, 7, 0, 131070, 7, 0, 65539, 7, 0, 65540, 7, 0, 65541, 7, 0, 65542, 7, 0, 65543, 7, 0, 196606, 7, 0, 196607, 7, 0, 131072, 7, 0, 131073, 7, 0, 131074, 7, 0, 131075, 7, 0, 131076, 7, 0, 131077, 7, 0, 131078, 7, 0, 131079, 7, 0, 196611, 7, 0, 196612, 7, 0, 327678, 7, 0, 327679, 7, 0, 262144, 7, 0, 262145, 7, 0, 262146, 7, 0, 262147, 7, 0 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -240, -128 )
+scale = Vector2( 0.48, 0.352 )
+texture = ExtResource( 2 )
+centered = false
+
+[connection signal="pressed" from="btn_home" to="." method="_on_btn_home_pressed"]
+[connection signal="pressed" from="btn_reset" to="." method="_on_btn_reset_pressed"]
